@@ -72,3 +72,12 @@ def test_golden_evidence_exists_in_sample_doc():
     doc = open(os.path.join(ROOT, "eval/docs/nimbus_handbook.md")).read()
     for item in json.load(open(os.path.join(ROOT, "eval/golden.json"))):
         assert hit_rank([doc], item["evidence"]) == 1, item
+
+def test_parse_file_preserves_utf8_unicode_and_empty_content(tmp_path):
+    from app.ingest import parse_file
+
+    for filename, content in (("unicode.txt", "Café 日本語 😀\n"), ("empty.md", "")):
+        document = tmp_path / filename
+        document.write_text(content, encoding="utf-8")
+        assert parse_file(str(document)) == content
+
