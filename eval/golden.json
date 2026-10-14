@@ -1,0 +1,14 @@
+[
+  {"question": "How much does the Team plan cost per month?", "evidence": "79 dollars per month"},
+  {"question": "How many times will a crashed pod be restarted automatically?", "evidence": "up to 4 times"},
+  {"question": "Where do jobs go after exhausting all restarts?", "evidence": "quarantine list"},
+  {"question": "How long are logs retained on the cheaper plan?", "evidence": "30 days on the Starter plan"},
+  {"question": "Are credentials ever persisted on the filesystem?", "evidence": "never written to disk"},
+  {"question": "Which geographic locations can I deploy to?", "evidence": "Frankfurt, Singapore and Oregon"},
+  {"question": "What error do I get if I send too many API calls?", "evidence": "HTTP status 429"},
+  {"question": "What is the minimum gap between scheduled runs?", "evidence": "shortest supported interval is 30 seconds"},
+  {"question": "Is there a discount for paying a year in advance?", "evidence": "15 percent discount"},
+  {"question": "When does an alert fire by default?", "evidence": "failure rate above 5 percent"},
+  {"question": "How long can I recover a removed project?", "evidence": "recovery area for 14 days"},
+  {"question": "How fast does support respond on the Team plan?", "evidence": "within 1 hour on Team"}
+]
